@@ -1,0 +1,82 @@
+[
+  {
+    "Traceroute": {
+      "traceroute vrf CE1-VRFA 33.33.33.33 source 11.11.11.11": {}
+    }
+  },
+  {
+    "Traceroute": {
+      "traceroute vrf CE2-VRFA 33.33.33.33 source 22.22.22.22": {}
+    }
+  },
+  {
+    "Traceroute": {
+      "traceroute vrf CE1-VRFB 33.33.33.33 source 12.12.12.12": {}
+    }
+  },
+  {
+    "Traceroute": {
+      "traceroute vrf CE2-VRFB 33.33.33.33 source 23.23.23.23": {}
+    }
+  },
+  {
+    "Traceroute": {
+      "traceroute vrf CE1-VRFA 44.44.44.44 source 11.11.11.11": {}
+    }
+  },
+  {
+    "Traceroute": {
+      "traceroute vrf CE2-VRFA 44.44.44.44 source 22.22.22.22": {}
+    }
+  },
+  {
+    "Traceroute": {
+      "traceroute vrf CE1-VRFB 44.44.44.44 source 12.12.12.12": {}
+    }
+  },
+  {
+    "Traceroute": {
+      "traceroute vrf CE2-VRFB 44.44.44.44 source 23.23.23.23": {}
+    }
+  },
+  {
+    "Traceroute": {
+      "traceroute vrf VRF-CE3 22.22.22.22 source 33.33.33.33": {}
+    }
+  },
+  {
+    "Traceroute": {
+      "traceroute vrf VRF-CE4 22.22.22.22 source 44.44.44.44": {}
+    }
+  },
+  {
+    "Traceroute": {
+      "traceroute vrf VRF-CE3 23.23.23.23 source 33.33.33.33": {}
+    }
+  },
+  {
+    "Traceroute": {
+      "traceroute vrf VRF-CE4 23.23.23.23 source 44.44.44.44": {}
+    }
+  },
+  {
+    "Traceroute": {
+      "traceroute vrf VRF-CE3 11.11.11.11 source 33.33.33.33": {}
+    }
+  },
+  {
+    "Traceroute": {
+      "traceroute vrf VRF-CE4 11.11.11.11 source 44.44.44.44": {}
+    }
+  },
+  {
+    "Traceroute": {
+      "traceroute vrf VRF-CE3 12.12.12.12 source 33.33.33.33": {}
+    }
+  },
+  {
+    "Traceroute": {
+      "traceroute vrf VRF-CE4 12.12.12.12 source 44.44.44.44": {}
+    }
+  }
+]

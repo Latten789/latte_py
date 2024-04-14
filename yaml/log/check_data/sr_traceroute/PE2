@@ -1,0 +1,37 @@
+[
+  {
+    "Traceroute": {
+      "traceroute sr-mpls 1.1.1.1/32 source 2.2.2.2": {}
+    }
+  },
+  {
+    "Traceroute": {
+      "traceroute sr-mpls 3.3.3.3/32 source 2.2.2.2": {}
+    }
+  },
+  {
+    "Traceroute": {
+      "traceroute sr-mpls 4.4.4.4/32 source 2.2.2.2": {}
+    }
+  },
+  {
+    "Traceroute": {
+      "traceroute sr-mpls 5.5.5.5/32 source 2.2.2.2": {}
+    }
+  },
+  {
+    "Traceroute": {
+      "traceroute sr-mpls 6.6.6.6/32 source 2.2.2.2": {}
+    }
+  },
+  {
+    "Traceroute": {
+      "traceroute sr-mpls 7.7.7.7/32 source 2.2.2.2": {}
+    }
+  },
+  {
+    "Traceroute": {
+      "traceroute sr-mpls 8.8.8.8/32 source 2.2.2.2": {}
+    }
+  }
+]

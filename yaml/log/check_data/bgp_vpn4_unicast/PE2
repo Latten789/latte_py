@@ -1,0 +1,27 @@
+{
+  "Route Distinguisher: 1.1.1.1:0": [],
+  "Route Distinguisher: 2.2.2.2:0 (default for vrf VRF-A)": [
+    {
+      "Best Path Info": "*> ",
+      "Network": "2.2.2.2/32",
+      "Next Hop": "0.0.0.0"
+    },
+    {
+      "Best Path Info": "*> ",
+      "Network": "22.22.22.22/32",
+      "Next Hop": "22.22.22.22"
+    },
+    {
+      "Best Path Info": "*> ",
+      "Network": "30.0.0.4/30",
+      "Next Hop": "0.0.0.0"
+    },
+    {
+      "Best Path Info": "*  ",
+      "Network": "30.0.0.4/30",
+      "Next Hop": "22.22.22.22"
+    }
+  ],
+  "Route Distinguisher: 5.5.5.5:0": [],
+  "Route Distinguisher: 6.6.6.6:0": []
+}
