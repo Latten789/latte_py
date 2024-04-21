@@ -1,0 +1,6 @@
+[tool.robocorp.log]
+
+log_filter_rules = [
+    {name = "n_log_*", kind = "exclude"},
+    {name = "CustomKeywords*", kind = "exclude"},
+]
