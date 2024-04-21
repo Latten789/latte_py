@@ -88,7 +88,6 @@ class CustomKeywords:
 
             
     #@keyword("Execute Command Parallel")
-    @log.suppress
     def execute_command_parallel(self, command, devices=None):
         if not self.devices:
             raise ValueError("Device list is empty. Ensure that the testbed is correctly loaded and devices are accessible.")
@@ -101,7 +100,7 @@ class CustomKeywords:
             target_devices = self.devices
 
  
-        #@log.suppress
+        @log.suppress
         def execute_command(device):
             output = device.execute(command)
             device_info = {
@@ -115,11 +114,27 @@ class CustomKeywords:
         results = []
         command_outputs = []
         with ThreadPoolExecutor(max_workers=len(target_devices)) as executor:
-            futures = [executor.submit(execute_command, device) for device in target_devices]           
+            futures = [executor.submit(execute_command, device) for device in target_devices]
             for future in as_completed(futures):
-                results.append(future.result())
+                result = future.result()
+                #results.append(result)
+                command_output_html = result["command_output"].replace("\n", "<br>")             # `command_output`をHTML形式で表示
+                log.html(f"<pre>Device: {result['name']}<br>Output:<br>{command_output_html}</pre>")
+            # for future in as_completed(futures):
+            #     results.append(future.result())
+
+            #     # command_outputs = [
+            #     #     result["command_output"].replace("\n", "<br>") 
+            #     #     for result in results
+            #     # ]
+            #     command_outputs.append(future.result()["command_output"].replace("\n", "<br>"))                # `command_output`をHTML形式で表示
+            #     cleaned_results_html = "<br><br>".join(command_outputs)  # 各出力の間に空白行を追加
+
+            #     # HTMLにラップしてログ出力
+            #     log.html(f"<pre>Command Output:<br>{cleaned_results_html}</pre>")  
+
                 
-        #@log.suppress
+        @log.suppress
         def natural_sort_key(item):
                 # 先頭の文字列に続く最初の数字セットを抽出
                 match = re.search(r"\d+", item['name'])

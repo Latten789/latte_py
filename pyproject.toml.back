@@ -1,0 +1,4 @@
+[tool.robocorp.log]
+log_filter_rules = [
+    {name = "Start", kind = "exclude"}
+]
